@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Schwab login</title>
+<style>body{font:16px -apple-system,system-ui,sans-serif;color:#222;background:#fff;margin:3rem auto;max-width:36rem;padding:0 1rem}</style>
+<p id="m">Finishing the Schwab login…</p>
+<script>
+(function () {
+  var q = window.location.search;
+  if (/[?&]code=/.test(q)) {
+    window.location.replace('https://schwab-proxy.ravamt4.workers.dev/oauth-callback' + q);
+  } else {
+    document.getElementById('m').textContent = 'Nothing to do here.';
+  }
+})();
+</script>
